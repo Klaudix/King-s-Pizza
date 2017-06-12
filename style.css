@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 110vh;
+    background-image: url(./img/header.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.head{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 100%;
+}
+.head ul{
+    position: absolute;
+    right: 3%;
+    top: 2%;
+    list-style-type: none;
+    text-align: right;
+}
+.head li{
+    display: inline-flex;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.head h1{
+    font-size: 7em;
+    position: absolute;
+    align-self: center;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+}
+.head a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    text-align: center;
+    height: 24px;
+    position: relative;
+}
+.head li div{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    border-bottom: 1.5px solid #fff;
+    width: 0px;
+    transition: 0.2s;
+}
+.head a:hover > div{
+    width: 100%;;
+}
+.break{
+    height: 75vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #ebf0d7;
+    
+}
+.break div{
+    height: 82vh;
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.break .small{
+    height: 50%;
+    width: 30%;
+}
+.reserv, .about, .dinner{
+    padding: 45px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+.break .big{
+    height: 50%;
+    width: 70%;
+}
+.break .first h1{
+    margin-bottom: 20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+}
+.break p{
+    font-family: 'Lato', sans-serif;
+}
+.break .first .img1{
+    background-image: url(./img/interior.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.break .first .img2{
+    background-image: url(./img/garden.jpg);
+    background-size: cover;
+    background-position: right bottom;
+}
+.break a{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 10%;
+    height: 15%;
+    text-decoration: none;
+    color: #77503b;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    border: 1px solid #77503b;
+    border-radius: 5px;
+    transition: 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+.break a div{
+    width: 120%;
+    height: 230%;
+    position: absolute;
+    background: #77503b;
+    transform: rotate(170deg);
+    left: -125%;
+    transition: 0.2s;
+}
+.break a b{
+    position: absolute;
+    z-index: 1000;
+    font-weight: 100;
+}
+.break a:hover > div{
+    left: -2%;
+}
+.break a:hover > b{
+    color: #fff;
+}
+.special{
+    height: 100vh;
+    background-image: url(./img/special.png);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.special h1{
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+.break .sec div{
+    height: 50%;
+    width: 25%;
+}
+.break .sec a div{
+    width: 200%;
+    height: 230%;
+    position: absolute;
+    background: #77503b;
+    transform: rotate(170deg);
+    left: -220%;
+    transition: 0.2s;
+}
+.break a:hover > div{
+    left: -2%;
+}
+.sec .img1{
+    background-image: url(./img/lasagna.jpg);
+    background-size: cover;
+    background-position: left;
+}
+.sec .img2{
+    background-image: url(./img/hd750x421.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec .img3{
+    background-image: url(./img/canelloni.jpg);
+    background-size: cover;
+}
+.sec .img4{
+    background-image: url(./img/quatro.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.sec h1{
+    font-size: 1.75em
+}
+.pic{
+    height: 100vh;
+    background-image: url(./img/pizza.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+footer{
+    display: inline-flex;
+    justify-content:space-between;
+    width: 100%;
+    height: 50vh;
+    padding: 5%
+}
+footer h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 10%
+}
+.hours{
+    margin: 0 15%;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 40%;
+}
+.hours div{
+    width: 50%;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.9em
+}
+.hours h1{
+    width: 100%;
+}
+footer h2{
+    position: absolute;
+    align-self: flex-end;
+    right: 8%;
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+.fb, .tw, .print, .snap{
+    height: 40px;
+    width: 40px;
+    background-size: contain;
+    filter: sepia(100%) brightness(115%) saturate(240%) hue-rotate(350deg);
+}
+.fb{
+    background-image: url(./img/fb.png)
+}
+.tw{
+    background-image: url(./img/tw.png)
+}
+.print{
+    background-image: url(./img/print.png)
+}
+.snap{
+    background-image: url(./img/snap.png)
+}
+.icons{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
